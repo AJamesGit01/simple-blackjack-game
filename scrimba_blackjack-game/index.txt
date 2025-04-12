@@ -1,0 +1,461 @@
+//------------------------------------------------------------------------//
+// 1. Create two variables, firstCard and secondCard. 
+// Set their values to a random number between 2-11
+
+// 2. Create a variable, sum, and set it to the sum of the two cards
+
+
+// let firstCard = 2
+// let secondCard = 11
+
+// let sum = firstCard + secondCard
+
+// console.log(sum)
+
+//-----------------------------------------------------------------------//
+
+// Check if the person is old enough to enter the nightclub (21)
+// Log a suitable message to the console in both cases
+
+// let age = 21
+
+// if less than 21 -> "You can not enter the club!"
+// else            -> "Welcome!"
+
+// if (age <= 21) {
+//     console.log("Welcome to the nightclub")
+// }
+
+// else {
+//     console.log("You can not enter the club!")
+// }
+
+//----------------------------------------------------------------------//
+
+// Check if the person is elegible for a birthday card from the King! (100)
+
+// let age = 100
+
+// if less than 100    -> "Not elegible"
+// else if exactly 100 -> "Here is your birthday card from the King!"
+// else                -> "Not elegible, you have already gotten one"
+
+// if (age < 100){
+//     console.log("Not elegible")
+// }
+
+// else if (age === 100){
+//     console.log("Here is your birthday card from the King!")
+// }
+
+// else{
+//     console.log("Not elegible, you have already gotten one")
+// }
+
+//--------------------------------------------------------------------//
+
+// let firstCard = 10
+// let secondCard = 10
+// let sum = firstCard + secondCard + 1
+
+// Write the conditional according to these rules:
+
+// if less than or equal to 20 -> "Do you want to draw a new card? 🙂"
+// else if exactly 21 -> "Wohoo! You've got Blackjack! 🥳"
+// else -> "You're out of the game! 😭"
+
+// if(sum <= 20) {
+//     console.log("Do you want to draw a new card? 🙂")
+// }
+
+// else if (sum === 21){
+//     console.log("Wohoo! You've got Blackjack! 🥳")
+// }
+
+// else{
+//     console.log("You're out of the game! 😭")
+// }
+
+//-------------------------------------------------------------------//
+
+// Adding Booleans True or False Statements
+
+// let firstCard = 10
+// let secondCard = 11
+// let sum = firstCard + secondCard 
+// let hasBlackJack = false
+// // 1. Create a variable called isAlive and assign it to true
+// let isAlive = true
+
+// // 2. Flip its value to false in the appropriate code block 
+// if (sum <= 20) {
+//     console.log("Do you want to draw a new card? 🙂")
+// } else if (sum === 21) {
+//     console.log("Wohoo! You've got Blackjack! 🥳")
+//     hasBlackJack = true
+// } else {
+//     console.log("You're out of the game! 😭")
+//     isAlive = false
+// }
+
+// 3. Log it out to check that you're doing it right
+
+// console.log(isAlive)
+
+//------------------------------------------------------------------------//
+
+// console.log(4 === 3)  // false
+// console.log(5 > 2)    // true
+// console.log(12 > 12)  // false
+// console.log(3 < 0)    // false
+// console.log(3 >= 3)   // true
+// console.log(11 <= 11) // true
+// console.log(3 <= 2)   // false
+
+//------------------------------------------------------------------------//
+
+// 1. Declare a variable called message and assign its value to an empty string
+
+// 2. Reassign the message variable to the string we're logging out
+
+// 3. Create a startGame() function. Move the conditional
+// below inside the body of the function.
+
+// 4. Store the message-el paragraph in a variable called messageEl
+
+// 5. Store the sum paragraph in a variable called sumEl
+
+// 6. Render the sum on the page using this format -> "Sum:"
+
+// 7. Store the cards paragraph in a variable called cardsEl
+
+// 8. Render the cars on the page using this format -> "Cards: 10 4"
+
+// 9. Create a new function called startGame() that calls renderGame()
+
+// let firstCard = 10
+// let secondCard = 4
+// let sum = firstCard + secondCard
+// let cards = [firstCard, secondCard] // array - ordered list of items
+// let hasBlackJack = false
+// let isAlive = true
+// let message = "";
+// let messageEl = document.getElementById("message-el")
+// let sumEl = document.getElementById("sum-el") // ---> this is a DOM
+// let sumEl = document.querySelector(".sum-el") ---> its an ID or Class query Selecteor but its same result as a DOM.
+// let cardsEl = document.getElementById("cards-el")
+
+// function startGame(){
+//     renderGame()
+// }
+
+// function renderGame(){
+
+    // cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1] ---> redering array - ordered list of items
+
+    // Create a for loop that renders out all the cards instead of just two
+
+    // for (let i = 0; i < cards.length; i++){
+        cardsEl.textContent += cards[i] + "  "
+    }
+    // sumEl.textContent = "Sum: " + sum
+
+// if (sum <= 20) {
+//     message = "Do you want to draw a new card?"
+// } else if (sum === 21) {
+//     message = "Wohoo! You've got Blackjack!"
+//     hasBlackJack = true
+// } else {
+//     message = "You're out of the game!"
+//     isAlive = false
+// }
+// // 3. Log it out!
+// messageEl.textContent = message
+// }
+
+// Create a function newCard() that logs out "Drawing a new card from the deck!"
+
+    // 1. Create a card variable, and hard code its value to a number (2-11)
+    
+    // 2. Add the new card to the sum variable
+    
+    // 3. Call startGame()
+
+// function newCard() {
+
+//     cardsEl.textContent = "Drawing a new card from the deck!"
+
+//     let card = 7
+
+//     sum += card
+
+// Push the card to the cards array
+       cards.push(card)
+       console.log(cards)
+//     renderGame()
+// }
+
+//------------------------------------------------------------------------//
+
+// Introduction to Arrays Lists
+
+// Create an array that lists your i.e. experience, education, licenses, skills or similar
+// The items of the array should be strings
+
+// let portfolio = [
+//     "Experience: Web Developer Using HTML, CSS, JAVASCRIPT and Frameworks Bootstrap",
+//     "Education: Bachelor of Science in Computer Science Student",
+//     "Skills: UI/UX maker ERD of DB, Front End Dev"
+// ]
+
+// Arrays - ordered lists of items
+
+// 0 indexed
+
+// let featuredPosts = [
+//     "Check out my Netflix clone", // 0
+//     "Here's the code for my project",  //1
+//     "I've just relaunched my portfolio"  //2
+// ]
+
+// console.log( featuredPosts[1] )
+
+// let experience = ["CEO at Scrimba", "Frontend developer at Xeneta", "People counter for Norstat"]
+
+// Make the following appear in the console:
+// Frontend developer at Xeneta
+// People counter for Norstat
+// CEO at Scrimba
+
+// DRY - Dont Repeat Yourself
+
+// console.log(experience[1])
+// console.log(experience[2])
+// console.log(experience[0])
+
+//-----------------------------------------------------------------------//
+
+// Array - ordered list of items - coposite / complex data type
+
+// Create an array that describes yourself. Use the three primitive data types you've learned
+// It should contain your name (string), your age (number), and whether you like pizza (boolean)
+
+// let myself = ["Allen James Datuin", 20,]
+
+// console.log(myself[0])
+// console.log(myself[1])
+
+// let you_likedpizza = true
+// let you_dontlikedpizza = true
+// let message = ""
+
+// if (you_likedpizza) {
+//     message = "Yes I Liked Pizza"
+// } else if (you_dontlikedpizza) {
+//     message = "Yes I dont Liked Pizza"
+// } else {
+//     message = "Yes I dont like the Pizza at all!"
+// }
+// // 3. Log it out!
+
+// console.log(message)
+
+//-----------------------------------------------------------------------//
+
+// let cards = [7, 4]
+
+// cards.push(6)
+
+// console.log(cards)
+
+// let cards = [7, 4]
+// cards.push(6)
+//console.log(cards)
+
+// Push the newMessage to the messages array, and then log out the array
+
+// let messages = [
+//     "Hey, how's it going?",        
+//     "I'm great, thank you! How about you?",
+//     "All good. Been working on my portfolio lately."
+// ]
+// let newMessage = "Same here!"
+
+// messages.push(newMessage)
+
+// console.log(messages)
+
+// How can you remove the last item in an array? Try to google it!
+
+// messages.pop(); // This will remove the last item from the array
+// console.log(messages); // Logs the updated array
+
+//-----------------------------------------------------------------------//
+
+// Aside For Loops:
+
+// Count to ten!
+
+// We need to specify...
+
+// Where should we START counting?
+// Where is the FINISH line?
+// What's the STEP SIZE we should use?
+
+//    START           FINISH       STEP SIZE
+// for ( let count = 1;  count < 11;  count += 1)  {
+    
+//     console.log(count)
+
+// }
+
+// Create a for loop that counts from 10 to 100 in steps of 10
+// Use console.log to log out the numbers
+
+// for ( let i = 10;  i < 101;  i += 10)  {
+    
+//     console.log(i)
+// }
+
+
+// let messages = [
+//     "Hey, how's it going?",        
+//     "I'm great, thank you! How about you?",
+//     "All good. Been working on my portfolio lately.",
+//     "Same here!",
+//     "Great to hear"
+// ]
+
+// for (let i = 0; i < 5; i += 1) { //----> These are indexing the arrays in for loop 
+//         console.log(messages[i])
+//     }
+
+// for (let i = 0; i < messages.length; i += 1) { //-------> These are a dynamic way of indexing the property called length in for loop
+//         console.log(messages[i])
+//     }
+
+// let cards = [7, 3, 9]
+
+// Create a for loop that logs out all the cards in the array
+// Use cards.length to specify how long the loop should run
+
+// for (let i = 0; i < cards.length; i += 1){
+//     console.log(cards[i])
+// }
+
+// for (let i = 0; i < cards.length; i++){ //----> These i++ increments automatically in for loop 
+//     console.log(cards[i])
+// }
+
+//------------------------------------------------------------------------//
+
+{/* <html>
+    <head>
+    </head>
+    <body>
+        <p id="greeting-el"></p>
+        <script src="index.js"></script>
+    </body>
+</html> */}
+
+// let sentence = ["Hello ", "my ", "name ", "is ", "Per"] 
+// let greetingEl = document.getElementById("greeting-el")
+
+// // Render the sentence in the greetingEl paragraph using a for loop and .textContent
+
+// for (let i = 0; i < sentence.length; i++){
+//  greetingEl.textContent += sentence[i]
+// }
+
+// let player1Time = 102
+// let player2Time = 107
+
+// cmd+d - ctrl+d
+// function getFastestRaceTime() {
+//     if (player1Time < player2Time) {
+//         return player1Time
+//     } else if (player2Time < player1Time) {
+//         return player2Time
+//     } else {
+//         return player1Time
+//     }
+// }
+
+// let fastestRace = getFastestRaceTime()
+
+// console.log(fastestRace)
+
+// Write a function that returns the total race time
+// Call/invoke the function and store the returned value in a new variable
+// Finally, log the variable out
+
+// function getTotalRaceTime() {
+//     return player1Time + player2Time
+// }
+
+// let totalTime = getTotalRaceTime()
+
+// console.log(totalTime)
+
+//-----------------------------------------------------------------------//
+
+// let randomNumber = Math.random()
+
+// console.log(randomNumber)
+
+
+/* 
+
+What does Math.random() do?
+
+Your answer: it generates a random number between 0 and 1 (not inclusive of 1)
+
+*/
+
+// let randomNumber = Math.random() * 6
+
+// console.log(randomNumber)
+
+
+/* 
+
+In which range will our randomNumber be now?
+
+From: 0.2331312123123
+To: 5.43909503845459
+
+*/
+
+// let flooredNumber = Math.floor(3.45632) //------> remove the decimals
+
+// console.log(flooredNumber)
+
+
+// What does Math.floor() do to positive numbers?
+
+// Your answer: 3
+
+// -------------------------------------------------->
+
+// let randomNumber = Math.floor( Math.random() * 6 ) + 1
+
+// console.log(randomNumber)
+
+/* 
+
+Write down all the possible values randomNumber can hold now!
+
+// 1 , 3, 4, 2, 0, 5
+ 
+*/
+
+// -------------------------------------------------->
+
+// Create a function, rollDice(), that returns a random number between 1 and 6
+
+// function rollDice() {
+//     let randomNumber = Math.floor( Math.random() * 6 ) + 1
+//     return randomNumber
+// }
+
+// console.log(rollDice())
